@@ -1,0 +1,154 @@
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  line-height: 1rem;
+  letter-spacing: .08rem;
+}
+
+body {
+  height: 300px;
+  width: 600px;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 20rem;
+  width: 80%;
+  background-color: transparent;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.clock-column {
+  margin-right: 7rem;
+  text-align: center;
+  position: relative;
+}
+
+.clock-column::after {
+  content: ':';
+  display: block;
+  height: .25rem;
+  width: .25rem;
+  font-size: 36px;
+  font-weight: 200;
+  color: #131313;
+  position: absolute;
+  top: 60px;
+  right: -35px;
+}
+
+.clock-column:last-child::after {
+  display: none;
+}
+
+.clock-column:last-child {
+  margin-right: 0;
+}
+
+.clock-label {
+  padding-top: 10px;
+  text-transform: uppercase;
+  color: #131313;
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid rgba(19, 19, 19, 0.5);
+}
+
+.clock-timer {
+  color: #131313;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.clock-input {
+  clear: both;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto 10px;
+}
+
+.flex {
+  flex-direction: row;
+  display: flex;
+  height: 100%;
+}
+
+.col {
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+}
+
+hr {
+  width: 70%;
+  border-color: #000;
+}
+
+.first {
+
+  background-color: #000;
+  color: #fff;
+}
+
+.second {
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.time-cont {
+  font-size: 80px;
+}
+
+.date {
+  position: relative;
+  top: 50px;
+  font-size: 10px;
+}
+
+.dropping-apple {
+  position: relative;
+  bottom: 50px;
+  right: 38px;
+  font-size: 10px;
+}
+.pad {
+  padding-left: 20%;
+}
+ 
+p {
+  font-size: 16px;
+  margin: 10px 00;
+  font-weight: bold;
+  line-height: 0px;
+}
+label {
+  display: block;
+  margin: 0;
+  font-size: 16px;
+line-height: 15px;
+}
+.mtt {
+  margin-top: 10px;
+}
+.mt {
+  margin-top: 20px;
+}
